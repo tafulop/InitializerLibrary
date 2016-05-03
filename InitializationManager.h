@@ -16,6 +16,7 @@
 
 #include "../PartContainerLibrary/PartContainerManager.h"
 #include "../PartContainerLibrary/PartContainer.h"
+#include "../CalculatorLibrary/ForwardKinematics.h"
 
 class InitializationManager {
     
@@ -43,11 +44,20 @@ private:
 
     // Part container
     PartContainerManager& partcontainer_m = PartContainerManager::getInstance();
+    
+    // Forward kinematics
+    ForwardKinematics& forwardKinematics = ForwardKinematics::getInstance();
 
     /**
      * Creates all joint type parts.
      */
     void createJoints();
+    
+    
+    /**
+     * Stores the created Joints in calculator object, creates the DHT matrices.
+     */
+    void initializeCalculations();
     
         
     /**

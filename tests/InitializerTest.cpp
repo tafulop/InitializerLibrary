@@ -28,7 +28,9 @@ void InitializerTest::setUp() {
 void InitializerTest::tearDown() {
 }
 
-
+/**
+ * Creates all parts for the robotic arm.
+ */
 void InitializerTest::initialize() {
     
     InitializationManager& initm = InitializationManager::getInstance();
@@ -38,7 +40,9 @@ void InitializerTest::initialize() {
     CPPUNIT_ASSERT(true);
 }
 
-
+/**
+ * Count the joints, fails if the number neq 5
+ */
 void InitializerTest::jointCount(){
 
     PartContainerManager& pc_man = PartContainerManager::getInstance();

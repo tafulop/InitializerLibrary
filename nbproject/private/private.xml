@@ -9,6 +9,9 @@
         <group>
             <file>file:/mnt/seagate_1TB/Development/Robotkar_reboot/InitializerLibrary/InitializationManager.h</file>
             <file>file:/mnt/seagate_1TB/Development/Robotkar_reboot/InitializerLibrary/InitializationManager.cpp</file>
+            <file>file:/mnt/seagate_1TB/Development/Robotkar_reboot/InitializerLibrary/tests/InitializerTestRunner.cpp</file>
+            <file>file:/mnt/seagate_1TB/Development/Robotkar_reboot/InitializerLibrary/tests/InitializerTest.cpp</file>
+            <file>file:/mnt/seagate_1TB/Development/Robotkar_reboot/InitializerLibrary/tests/InitializerTest.h</file>
         </group>
     </open-files>
 </project-private>

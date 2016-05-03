@@ -40,6 +40,7 @@ private:
     /* TEST FUNCTIONS */
     void initialize();
     
+    /* Count the created joints */
     void jointCount();
     
     
