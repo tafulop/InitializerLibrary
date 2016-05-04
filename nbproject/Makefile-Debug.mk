@@ -86,8 +86,8 @@ ${OBJECTDIR}/InitializationManager.o: InitializationManager.cpp
 # Build Test Targets
 .build-tests-conf: .build-tests-subprojects .build-conf ${TESTFILES}
 .build-tests-subprojects:
-	cd /mnt/seagate_1TB/Development/Robotkar_reboot/PartContainerLibrary && ${MAKE}  -f Makefile CONF=Debug
 	cd /mnt/seagate_1TB/Development/Robotkar_reboot/RoboticArmPartLibrary && ${MAKE}  -f Makefile CONF=Debug
+	cd /mnt/seagate_1TB/Development/Robotkar_reboot/PartContainerLibrary && ${MAKE}  -f Makefile CONF=Debug
 
 ${TESTDIR}/TestFiles/f1: ${TESTDIR}/tests/InitializerTest.o ${TESTDIR}/tests/InitializerTestRunner.o ${OBJECTFILES:%.o=%_nomain.o}
 	${MKDIR} -p ${TESTDIR}/TestFiles

@@ -62,8 +62,8 @@ void InitializationManager::initializeCalculations(){
     std::vector<DenavitHartenbergMatrix*> matrices;
     
     // alfa, a, theta, d
-    matrices.emplace(matrices.end(), new DenavitHartenbergMatrix(90,    5,      0,   0));  // 0
-    matrices.emplace(matrices.end(), new DenavitHartenbergMatrix(0,     10,     0,  0));   // 1
+    matrices.emplace(matrices.end(), new DenavitHartenbergMatrix(90,    216,      0,   0));  // 0
+    matrices.emplace(matrices.end(), new DenavitHartenbergMatrix(0,     469,     0,  0));   // 1
     matrices.emplace(matrices.end(), new DenavitHartenbergMatrix(90,    0,      0,   0));   // 2
     matrices.emplace(matrices.end(), new DenavitHartenbergMatrix(-90,   0,      0,   0));  // 3
     matrices.emplace(matrices.end(), new DenavitHartenbergMatrix(90,    0,      0,   0));   // 4
@@ -72,9 +72,9 @@ void InitializationManager::initializeCalculations(){
     std::cout << "Step 1/5 - Matrices created." << std::endl;
     
     // set offsets for D
-    matrices.at(0)->setOffset(DenavitHartenbergMatrix::OFFSET_VARIABLE::D, 10);
-    matrices.at(3)->setOffset(DenavitHartenbergMatrix::OFFSET_VARIABLE::D, 20);
-    matrices.at(5)->setOffset(DenavitHartenbergMatrix::OFFSET_VARIABLE::D, 10);
+    matrices.at(0)->setOffset(DenavitHartenbergMatrix::OFFSET_VARIABLE::D, 221);
+    matrices.at(3)->setOffset(DenavitHartenbergMatrix::OFFSET_VARIABLE::D, 440+78);
+    matrices.at(5)->setOffset(DenavitHartenbergMatrix::OFFSET_VARIABLE::D, 92);
     
     std::cout << "Step 2/5 - D offsets set." << std::endl;
     
